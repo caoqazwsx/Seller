@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/newforms_item_formId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:text="formId"/>
+        <TextView
+            android:id="@+id/newforms_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:text="state"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/btn"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+      >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newforms_item_address"
+
+                android:text="address"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newforms_item_telephone"
+
+                android:text="telephone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newforms_item_time"
+                android:text="time"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/btn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/newforms_item_list_food"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:listSelector="#00000000">
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newforms_item_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:text="form_total_price"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/btn"/>
+
+    <LinearLayout
+        android:id="@+id/newforms_item_backFromNote"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/btn"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退单理由:"/>
+
+        <TextView
+            android:id="@+id/newforms_item_backReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="backFromNote"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@color/verywhite"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/newforms_item_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消订单"
+            android:background="@drawable/lv_btn_forms_item2"/>
+        <Button
+            android:id="@+id/newforms_item_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/lv_btn_forms_item"
+            android:text="确认退单" />
+        <Button
+            android:id="@+id/newforms_item_noBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/lv_btn_forms_item"
+            android:text="不予退单" />
+        <Button
+            android:id="@+id/newforms_item_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/d_bg_btn_green_focus"
+            android:text="接受订单" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

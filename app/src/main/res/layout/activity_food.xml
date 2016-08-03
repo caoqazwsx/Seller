@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activity.FoodActivity">
+
+    <include layout="@layout/title_base"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+      <!--有按键动作的ListView 的高度一定要match_parent，（原因不明）否则会有相同项重复加载的问题，导致按键卡顿-->
+        <com.zhao.seller.custom.DownUpListView
+            android:id="@+id/food_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </com.zhao.seller.custom.DownUpListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/food_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/system"
+            android:text="增加" />
+
+    </LinearLayout>
+
+</LinearLayout>
